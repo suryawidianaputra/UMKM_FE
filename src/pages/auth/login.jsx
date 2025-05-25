@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { forgetPassword, login, register } from "../../helper/link";
 import { useNavigate } from "react-router-dom";
+import { setCookie } from "../../helper/cookie";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
